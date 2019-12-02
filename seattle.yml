@@ -1,0 +1,20 @@
+name: seattle
+channels:
+  - defaults
+  - conda-forge
+  - konstantinstadler
+dependencies:
+  - python=3.7
+  - matplotlib
+  - numpy
+  - pandas
+  - seaborn
+  - plotly
+  - jupyter
+  - ipykernel
+  - missingno
+  - country_converter
+  - regex
+  - pyjanitor
+  - openssl
+  - pytest
