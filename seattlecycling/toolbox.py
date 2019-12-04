@@ -9,3 +9,10 @@ def hours_of_daylight(date, axis=23.44, latitude=47.61):
     m = 1. - np.tan(np.radians(latitude)) * np.tan(np.radians(axis) * np.cos(day * np.pi / 182.625))
     m = max(0, min(m, 2))
     return 24. * np.degrees(np.arccos(1 - m)) / 180.
+
+
+def print_rms(var):
+	"""Calculates and prints the root-mean-square about the trend line"""
+	rms = np.std(var)
+	print('Root-mean-square about trend: {0: .0f} riders'.format(rms))
+
