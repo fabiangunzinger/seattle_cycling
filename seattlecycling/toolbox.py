@@ -15,4 +15,3 @@ def print_rms(var):
 	"""Calculates and prints the root-mean-square about the trend line"""
 	rms = np.std(var)
 	print('Root-mean-square about trend: {0: .0f} riders'.format(rms))
-
