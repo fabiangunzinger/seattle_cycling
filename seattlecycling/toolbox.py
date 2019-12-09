@@ -15,3 +15,13 @@ def print_rms(var):
 	"""Calculates and prints the root-mean-square about the trend line"""
 	rms = np.std(var)
 	print('Root-mean-square about trend: {0: .0f} riders'.format(rms))
+
+def csnap(df, fn=lambda x: x.shape, msg=None):
+    """ 
+    Custom Help function to print things in method chaining.
+    Returns back the df to further use in chaining.
+    """
+    if msg:
+        print(msg)
+    display(fn(df))
+    return df

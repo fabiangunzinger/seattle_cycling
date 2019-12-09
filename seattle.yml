@@ -18,3 +18,5 @@ dependencies:
   - pyjanitor
   - openssl
   - pytest
+  - nb_black
+  - altair
